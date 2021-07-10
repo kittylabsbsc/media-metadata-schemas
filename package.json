@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "trash dist",
-    "build": "yarn clean && tsc && cp -R schemas dist && cpy types/**/*.d.ts dist --no-overwrite --parents",
+    "build": "tsc && cp -R schemas dist && cpy types/**/*.d.ts dist --no-overwrite --parents",
     "test": "jest",
     "codegen": "json2ts -i schemas/ -o types/",
     "prepublish": "yarn codegen && yarn build"
