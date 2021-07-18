@@ -1,6 +1,6 @@
 {
   "description": "This schema describes version 20210604 of the Tuli Metadata Standard",
-  "title": "Tuli20210604",
+  "title": "Tuli20210718",
   "$id": "https://meta.tuli.ink/schemas/TuliMetadata.json",
   "$defs": {
     "attribute": {
@@ -48,7 +48,7 @@
     "version": {
       "description": "This property defines the calendar version of the schema so that consumers can correctly parse the json",
       "examples": [
-        "tuli-20210604"
+        "tuli-20210718"
       ],
       "type": "string"
     },
@@ -81,7 +81,7 @@
   "additionalProperties": false,
   "examples": [
     {
-      "version": "tuli-20210604",
+      "version": "tuli-20210718",
       "name": "Tuli Whitepaper",
       "description": "This paper describes protocol to create, share and exchange universally accessible and valuable information on the internet.",
       "mimeType": "text/plain",

@@ -8,7 +8,7 @@
 /**
  * This schema describes version 20210604 of the Tuli Metadata Standard
  */
-export interface Tuli20210604 {
+export interface Tuli20210718 {
   /**
    * This property is the name of the Media
    */
