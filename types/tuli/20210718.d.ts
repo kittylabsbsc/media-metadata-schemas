@@ -10,6 +10,14 @@
  */
 export interface Tuli20210718 {
   /**
+   * This property defines an optional preview image URL for the media
+   */
+  image_url: string;
+  /**
+   * The mimeType of the media
+   */
+  mimeType: string;
+  /**
    * This property is the name of the Media
    */
   name: string;
@@ -18,17 +26,9 @@ export interface Tuli20210718 {
    */
   description: string;
   /**
-   * The mimeType of the media
-   */
-  mimeType: string;
-  /**
    * This property defines the calendar version of the schema so that consumers can correctly parse the json
    */
   version: string;
-  /**
-   * This property defines an optional preview image URL for the media
-   */
-  image_url: string;
   /**
    * This property defines an optional external URL that can reference a webpage or external asset for the NFT
    */

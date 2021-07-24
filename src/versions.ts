@@ -2,7 +2,7 @@
  *
  */
 export const supportedVersions: { [key: string]: Array<string> } = {
-  tuli: ['20210101', '20210604'],
+  tuli: ['20210101', '20210604', '20210718'],
   catalog: ['20210202'],
   amulet: ['20210221']
 }
@@ -15,7 +15,8 @@ export const supportedVersionsTypeMapping: {
 } = {
   tuli: {
     '20210101': 'Tuli20210101',
-    '20210604': 'Tuli20210604'
+    '20210604': 'Tuli20210604',
+    '20210718': 'Tuli20210718'
   },
   catalog: {
     '20210202': 'Catalog20210202'

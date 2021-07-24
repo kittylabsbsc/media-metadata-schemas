@@ -24,17 +24,10 @@
   },
   "type": "object",
   "properties": {
-    "name": {
-      "description": "This property is the name of the Media",
+   "image_url": {
+      "description": "This property defines an optional preview image URL for the media",
       "examples": [
-        "Tuli Whitepaper"
-      ],
-      "type": "string"
-    },    
-    "description": {
-      "description": "The description of the media",
-      "examples": [
-        "This paper describes protocol to create, share and exchange universally accessible and valuable information on the internet."
+        "ipfs://bafkreig4qxcms7msakiafuapwensj2lamszmdbbukqxxcpfesvgd2jzswa"
       ],
       "type": "string"
     },
@@ -45,17 +38,24 @@
       ],
       "type": "string"
     },
+    "name": {
+      "description": "This property is the name of the Media",
+      "examples": [
+        "Tuli Whitepaper"
+      ],
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the media",
+      "examples": [
+        "This paper describes protocol to create, share and exchange universally accessible and valuable information on the internet."
+      ],
+      "type": "string"
+    },
     "version": {
       "description": "This property defines the calendar version of the schema so that consumers can correctly parse the json",
       "examples": [
         "tuli-20210718"
-      ],
-      "type": "string"
-    },
-    "image_url": {
-      "description": "This property defines an optional preview image URL for the media",
-      "examples": [
-        "https://ipfs.io/ipfs/bafkreig4qxcms7msakiafuapwensj2lamszmdbbukqxxcpfesvgd2jzswa"
       ],
       "type": "string"
     },
@@ -80,19 +80,18 @@
   },
   "additionalProperties": false,
   "examples": [
-    {
-      "version": "tuli-20210718",
+    { "image_url": "ipfs://bafkreig4qxcms7msakiafuapwensj2lamszmdbbukqxxcpfesvgd2jzswa",
+      "mimeType": "text/plain",
       "name": "Tuli Whitepaper",
       "description": "This paper describes protocol to create, share and exchange universally accessible and valuable information on the internet.",
-      "mimeType": "text/plain",
-      "image_url": "https://ipfs.io/ipfs/bafkreig4qxcms7msakiafuapwensj2lamszmdbbukqxxcpfesvgd2jzswa"
+      "version": "tuli-20210718"
     }
   ],
   "required": [
-    "version",
+    "image_url",
+    "mimeType",
     "name",
     "description",
-    "mimeType",
-    "image_url"
+    "version"
   ]
 }
